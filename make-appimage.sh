@@ -13,8 +13,9 @@ export DESKTOP=/usr/share/applications/com.mattjakeman.ExtensionManager.desktop
 export DEPLOY_GTK=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/extension-manager
-
+quick-sharun /usr/bin/extension-manager \
+             /usr/lib/gio/modules/libdconfsettings.so
+             
 # Additional changes can be done in between here
 
 # Turn AppDir into AppImage
