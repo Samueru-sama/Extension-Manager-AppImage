@@ -6,11 +6,7 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm \
-               dbus \
-               dconf \
-               glib2 \               
-               extension-manager
+pacman -Syu --noconfirm extension-manager
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
